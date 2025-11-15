@@ -35,6 +35,26 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="floating-symbols">
+            <span class="floating-symbol symbol-1">π</span>
+            <span class="floating-symbol symbol-2">Σ</span>
+            <span class="floating-symbol symbol-3">∫</span>
+            <span class="floating-symbol symbol-4">∇</span>
+            <span class="floating-symbol symbol-5">∞</span>
+            <span class="floating-symbol symbol-6">∑</span>
+            <span class="floating-symbol symbol-7">∂</span>
+            <span class="floating-symbol symbol-8">√</span>
+            <span class="floating-symbol symbol-9">θ</span>
+            <span class="floating-symbol symbol-10">λ</span>
+            <span class="floating-symbol symbol-11">α</span>
+            <span class="floating-symbol symbol-12">β</span>
+            <span class="floating-symbol symbol-13">•</span>
+            <span class="floating-symbol symbol-14">◊</span>
+            <span class="floating-symbol symbol-15">◈</span>
+            <span class="floating-symbol symbol-16">∆</span>
+            <span class="floating-symbol symbol-17">µ</span>
+            <span class="floating-symbol symbol-18">σ</span>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
@@ -47,23 +67,17 @@
                         A passionate student and aspiring data scientist, dedicated to leveraging mathematics and AI to solve complex problems and contribute to education and community development.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
                         <a href="#about" class="btn btn-secondary">Learn More</a>
                     </div>
                     <div class="social-links">
                         <a href="mailto:tshewang.dorjih@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
                         <a href="tel:+447438431846" class="social-link" aria-label="Phone"><i class="fas fa-phone"></i></a>
-                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tshewangdorji21" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="image-wrapper">
-                        <div class="image-placeholder">
-                            <div class="image-placeholder">
-                                <i class="fas fa-user"></i>
-                            </div>
-                        </div>
+                        <img src="your-photo.jpg" alt="Tshewang Dorji" class="hero-photo">
                     </div>
                 </div>
             </div>
@@ -181,6 +195,22 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
+                        <div class="timeline-date">Oct 2025 - Present</div>
+                        <h3 class="timeline-title">Social Media Ambassador</h3>
+                        <h4 class="timeline-company">Middlesex University</h4>
+                        <p class="timeline-description">
+                            Managing university social media presence and engaging with the student community through digital platforms.
+                        </p>
+                        <ul class="timeline-details">
+                            <li>Create and manage social media content for university platforms</li>
+                            <li>Engage with student community through various social media channels</li>
+                            <li>Promote university events and initiatives online</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
                         <div class="timeline-date">Oct 2024 - Present</div>
                         <h3 class="timeline-title">Kortext Student Ambassador</h3>
                         <h4 class="timeline-company">Middlesex University</h4>
@@ -208,6 +238,11 @@
                             <li>Participate in university outreach and recruitment activities</li>
                             <li>Foster cross-cultural understanding and community building</li>
                         </ul>
+                        <div class="certificate-link-container">
+                            <a href="#" class="certificate-link" data-certificate="International Student Ambassador.pdf">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -303,9 +338,9 @@
                     <div class="education-content">
                         <h3 class="education-degree">Bhutan Higher Secondary Education Certificate (BHSEC)</h3>
                         <h4 class="education-institution">The Royal Academy, Paro, Bhutan</h4>
-                        <div class="education-date">2021 | Grade: 89%</div>
+                        <div class="education-date">2021</div>
                         <p class="education-description">
-                            Completed higher secondary education with distinction. Also received Grade 11 Internal Examination (2020, 87%) and Bhutan Certificate of Secondary Education - BCSE (2019, 85%).
+                            Completed higher secondary education with distinction. Also received Grade 11 Internal Examination (2020) and Bhutan Certificate of Secondary Education - BCSE (2019).
                         </p>
                     </div>
                 </div>
@@ -327,6 +362,13 @@
     </section>
 
     <!-- Achievements Section -->
+    <!-- 
+        TO ADD A CERTIFICATE:
+        1. Put your PDF file in the certificates/ folder
+        2. Add data-certificate="your-filename.pdf" to the achievement-card
+        3. The certificate badge and click functionality will be added automatically!
+        Example: <div class="achievement-card" data-certificate="My Certificate.pdf">
+    -->
     <section id="achievements" class="achievements">
         <div class="container">
             <h2 class="section-title">Achievements & Awards</h2>
@@ -343,7 +385,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="achievement-card">
+                <div class="achievement-card" data-certificate="Bhutan bacculuareate.pdf">
                     <div class="achievement-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
@@ -353,6 +395,9 @@
                         <p class="achievement-description">
                             Among the first batch to receive the Bhutan Baccalaureate certification under the Bhutan Baccalaureate curriculum.
                         </p>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i> Certificate Available
+                        </div>
                     </div>
                 </div>
                 <div class="achievement-card">
@@ -379,7 +424,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="achievement-card">
+                <div class="achievement-card" data-certificate="e-yantra.pdf">
                     <div class="achievement-icon">
                         <i class="fas fa-robot"></i>
                     </div>
@@ -389,9 +434,12 @@
                         <p class="achievement-description">
                             Top 16 finalist in a national robotics competition organized by IIT Bombay, India.
                         </p>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i> Certificate Available
+                        </div>
                     </div>
                 </div>
-                <div class="achievement-card">
+                <div class="achievement-card" data-certificate="space settlement design.pdf">
                     <div class="achievement-icon">
                         <i class="fas fa-rocket"></i>
                     </div>
@@ -401,6 +449,9 @@
                         <p class="achievement-description">
                             Member of the winning team that designed a hypothetical settlement in the atmosphere of Venus.
                         </p>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i> Certificate Available
+                        </div>
                     </div>
                 </div>
                 <div class="achievement-card">
@@ -420,11 +471,33 @@
     </section>
 
     <!-- Courses & Training Section -->
+    <!-- 
+        TO ADD A CERTIFICATE:
+        1. Put your PDF file in the certificates/ folder
+        2. Add data-certificate="your-filename.pdf" to the course-card or achievement-card
+        3. The certificate badge and click functionality will be added automatically!
+        Example: <div class="course-card" data-certificate="My Certificate.pdf">
+    -->
     <section id="courses" class="courses">
         <div class="container">
             <h2 class="section-title">Online Courses & Training</h2>
             <div class="courses-grid">
-                <div class="course-card">
+                <div class="course-card" data-certificate="KLIC Program Certificate .pdf">
+                    <div class="course-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Korean Digital Learning Improvement Cooperation Program</h3>
+                        <h4 class="course-institution">Delegates from ULSAN Metropolitan City</h4>
+                        <p class="course-description">
+                            International cooperation program focused on digital learning improvement and educational innovation.
+                        </p>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i> Certificate Available
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" data-certificate="Leadership.pdf">
                     <div class="course-icon">
                         <i class="fas fa-university"></i>
                     </div>
@@ -434,9 +507,27 @@
                         <p class="course-description">
                             Comprehensive leadership development program focusing on personal growth and professional excellence.
                         </p>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i> Certificate Available
+                        </div>
                     </div>
                 </div>
-                <div class="course-card">
+                <div class="course-card" data-certificate="Pyhon.pdf">
+                    <div class="course-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Basic Python</h3>
+                        <h4 class="course-institution">Santander</h4>
+                        <p class="course-description">
+                            Foundational Python programming course covering basic syntax, data structures, and programming fundamentals.
+                        </p>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i> Certificate Available
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" data-certificate="Deep Learning.pdf">
                     <div class="course-icon">
                         <i class="fas fa-brain"></i>
                     </div>
@@ -446,6 +537,9 @@
                         <p class="course-description">
                             Advanced course covering deep learning architectures, neural network design, and implementation.
                         </p>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i> Certificate Available
+                        </div>
                     </div>
                 </div>
                 <div class="course-card">
@@ -472,7 +566,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="course-card">
+                <div class="course-card" data-certificate="Data and AI Ethics.pdf">
                     <div class="course-icon">
                         <i class="fas fa-balance-scale"></i>
                     </div>
@@ -482,6 +576,9 @@
                         <p class="course-description">
                             Ethical considerations in data science and AI, covering privacy, bias, and responsible AI development.
                         </p>
+                        <div class="certificate-badge">
+                            <i class="fas fa-certificate"></i> Certificate Available
+                        </div>
                     </div>
                 </div>
                 <div class="course-card">
@@ -537,9 +634,7 @@
                         </div>
                     </div>
                     <div class="contact-social">
-                        <a href="https//www.linkedin.com/in/tshewang-dorji-228bb6285" class="social-link-large" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link-large" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                       
+                        <a href="https://www.linkedin.com/in/tshewangdorji21" class="social-link-large" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 
@@ -553,6 +648,19 @@
             <p>&copy; 2025 Tshewang Dorji. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="certificate-modal">
+        <div class="certificate-modal-content">
+            <span class="certificate-close">&times;</span>
+            <iframe id="certificateFrame" src="" frameborder="0"></iframe>
+            <div class="certificate-actions">
+                <a id="certificateDownload" href="" download class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download Certificate
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
